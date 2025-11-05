@@ -1,10 +1,13 @@
+import Navbar from "./components/Navbar"
+import HomePage from "./pages/HomePage"
 
 function App() {
   
 
   return (
     <>
-      <h1>Moshi, mooshi. Daijobu desu ka?</h1>
+      <Navbar/>
+      <HomePage/>
     </>
   )
 }

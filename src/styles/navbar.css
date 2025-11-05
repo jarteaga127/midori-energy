@@ -1,0 +1,17 @@
+nav {
+    padding: .5rem 1rem;
+}
+
+nav, nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    margin-left: .5rem;
+}
