@@ -1,7 +1,6 @@
 const Features = () => {
     return ( 
-        <>
-        </>
+        <section className="feature-sec"></section>
      );
 }
  
