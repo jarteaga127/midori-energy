@@ -2,7 +2,7 @@ const HeroSec = () => {
     return ( 
         <>
         <section className="hero-sec">
-            <h1>Drink of the gods</h1>
+            <h1>Add more green to your life. Drink Midori.</h1>
             <button>Shop now</button>
         </section>
         </>
