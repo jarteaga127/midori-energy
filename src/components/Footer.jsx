@@ -4,10 +4,10 @@ import '../styles/footer.css'
 const Footer = () => {
     return ( 
         <footer>
-            <header><Link to="/">Midori</Link></header>
+            <header><Link to="/" className='link'>Midori</Link></header>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about-us">About us</Link></li>
+                <li><Link to="/" className='link'>Home</Link></li>
+                <li><Link to="/about-us" className='link'>About us</Link></li>
                 <li>Shop</li>
                 <li>Subscribe</li>
             </ul>
