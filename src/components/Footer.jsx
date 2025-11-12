@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import '../styles/footer.css'
 
 const Footer = () => {
     return ( 
         <footer>
-            <header>Midori</header>
+            <header><Link to="/">Midori</Link></header>
             <ul>
-                <li>Home</li>
-                <li>About us</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about-us">About us</Link></li>
                 <li>Shop</li>
                 <li>Subscribe</li>
             </ul>
