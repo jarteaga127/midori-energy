@@ -1,3 +1,5 @@
+import '../styles/hero-sec.css'
+
 const HeroSec = () => {
     return ( 
         <>
