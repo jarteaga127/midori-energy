@@ -1,0 +1,4 @@
+.about-sec {
+    display: flex;
+    flex-direction: row;
+}

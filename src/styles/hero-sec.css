@@ -1,4 +1,11 @@
 .hero-sec {
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-sec-text button {
+   font-size: 25px;
 }
