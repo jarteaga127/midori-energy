@@ -1,3 +1,5 @@
+import '../styles/about-sec.css'
+
 const AboutSec = () => {
     return ( 
         <section className="about-sec">

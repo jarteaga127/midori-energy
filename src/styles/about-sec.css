@@ -1,4 +1,13 @@
 .about-sec {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.about-sec-img {
+    width: 50%;
+    height: 720px
+}
+
+.about-sec-text {
+    width: 50%;
 }
