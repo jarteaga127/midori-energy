@@ -1,4 +1,17 @@
+:root {
+  --main-color: #3D7521;
+  --main-color-2: #275B0D;
+  --second-color: #EFA700;
+  --second-color-2: #D38302;
+  --white: #FAFFF7;
+  --black: #081601;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: var(--main-color);
+    color: var(--white);
 }
+
