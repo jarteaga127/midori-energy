@@ -7,18 +7,18 @@
   --black: #081601;
 }
 
-.about-sec {
+.feature-sec {
     display: flex;
     justify-content: flex-start;
-    background-color: var(--main-color);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
 }
 
-.about-sec-img {
+.feature-img {
     width: 50%;
-    height: 500px;
 }
 
-.about-sec-text {
+.feature-text {
     width: 50%;
 }
+
