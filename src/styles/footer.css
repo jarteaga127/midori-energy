@@ -10,8 +10,19 @@
 footer {
     display: flex;
     justify-content: space-between;
-    padding: .5rem 1rem;
+    padding: .5rem 1rem 1.25rem;
     background-color: var(--main-color);
     color: var(--white);
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+  transition: .5s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  transition: .5s;
 }
 
