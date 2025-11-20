@@ -23,10 +23,23 @@ nav ul {
     list-style-type: none;
 }
 
+
+
 nav li {
     margin-left: .5rem;
 }
 
 .side-menu-btn {
     display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+
+    .side-menu-btn {
+        display: block;
+        background-color: transparent;
+    }
 }

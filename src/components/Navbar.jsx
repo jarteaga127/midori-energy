@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../styles/navbar.css'
 import { FaBars } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = (toggle) => {
     return ( 
         <>
         <nav>
