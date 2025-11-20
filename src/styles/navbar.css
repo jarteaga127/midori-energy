@@ -36,10 +36,15 @@ nav li {
 @media screen and (max-width: 1024px) {
     nav ul {
         display: none;
+        flex-direction: column;
+    text-align: center;
+    background-color: var(--white);
     }
 
     .side-menu-btn {
         display: block;
         background-color: transparent;
     }
+
+
 }

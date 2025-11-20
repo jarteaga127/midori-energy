@@ -14,7 +14,7 @@ const Navbar = (toggle) => {
                 <li>Subscribe</li>
                 <li>Login</li>
             </ul>
-            <button className="side-menu-btn"><FaBars/></button>
+            <button className="side-menu-btn" onClick={toggle}><FaBars/></button>
         </nav>
         </>
      );
