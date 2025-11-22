@@ -14,7 +14,14 @@ const Navbar = (toggle) => {
                 <li>Subscribe</li>
                 <li>Login</li>
             </ul>
-            <button className="side-menu-btn" onClick={toggle}><FaBars/></button>
+            <div className="side-menu-btn" onClick={toggle}><FaBars/></div>
+            <ul className="side-menu">
+                <li><Link to="/" className='link'>Home</Link></li>
+                <li><Link to="/about-us" className='link'>About us</Link></li>
+                <li>Shop</li>
+                <li>Subscribe</li>
+                <li>Login</li>
+            </ul>
         </nav>
         </>
      );

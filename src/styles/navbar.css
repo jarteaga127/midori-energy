@@ -10,7 +10,7 @@
 nav {
     padding: .5rem 1rem;
     background-color: var(--white);
-
+height: 72px;
 }
 
 nav, nav ul {
@@ -33,18 +33,27 @@ nav li {
     display: none;
 }
 
+.side-menu {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
+
+
+
     nav ul {
         display: none;
-        flex-direction: column;
-    text-align: center;
-    background-color: var(--white);
     }
 
     .side-menu-btn {
         display: block;
         background-color: transparent;
     }
+
+.side-menu {
+    display: none;
+   margin-top: 72px;
+}
 
 
 }
