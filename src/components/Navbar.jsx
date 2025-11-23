@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom';
 import '../styles/navbar.css'
 import { FaBars } from "react-icons/fa6";
 
-const Navbar = (toggle) => {
+const Navbar = ({toggle, isOpen}) => {
+
+   const containerClass = isOpen ? "side-menu-cont open" : "side-menu-cont";
+
+
     return ( 
         <>
         <nav>
@@ -14,6 +18,7 @@ const Navbar = (toggle) => {
                 <li>Subscribe</li>
                 <li>Login</li>
             </ul>
+            <div className={containerClass} >
             <div className="side-menu-btn" onClick={toggle}><FaBars/></div>
             <ul className="side-menu">
                 <li><Link to="/" className='link'>Home</Link></li>
@@ -22,6 +27,7 @@ const Navbar = (toggle) => {
                 <li>Subscribe</li>
                 <li>Login</li>
             </ul>
+            </div>
         </nav>
         </>
      );

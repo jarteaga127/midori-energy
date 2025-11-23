@@ -16,7 +16,7 @@ setIsOpen(!isOpen)
 
   return (
     <>
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} isOpen={isOpen} />
       <Routes>
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
