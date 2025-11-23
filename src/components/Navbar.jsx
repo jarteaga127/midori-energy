@@ -11,16 +11,17 @@ const Navbar = ({toggle, isOpen}) => {
         <>
         <nav>
             <header><Link to="/" className='link'>Midori</Link></header>
-            <ul>
+            <ul className='nav-links'>
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
                 <li>Shop</li>
                 <li>Subscribe</li>
                 <li>Login</li>
             </ul>
-            <div className={containerClass} >
+            
             <div className="side-menu-btn" onClick={toggle}><FaBars/></div>
-            <ul className="side-menu">
+            <div className={containerClass} >
+            <ul className="side-links">
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
                 <li>Shop</li>

@@ -41,19 +41,32 @@ nav li {
 
 
 
-    nav ul {
+    .nav-links {
         display: none;
     }
+
+    .side-menu-cont {
+ display: none;
+   
+}
+
+.side-menu-cont.open {
+    position: fixed;
+z-index: 999;
+width: 100%;
+height: 100%;
+background-color: var(--white);
+    
+}
 
     .side-menu-btn {
         display: block;
         background-color: transparent;
     }
 
-.side-menu {
-    display: none;
-   margin-top: 72px;
+.side-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
 }
-
-
 }
