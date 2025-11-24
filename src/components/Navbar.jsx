@@ -20,7 +20,9 @@ const Navbar = ({toggle, isOpen}) => {
             </ul>
             
             <div className="side-menu-btn" onClick={toggle}><FaBars/></div>
-            <div className={containerClass} >
+            
+        </nav>
+        <div className={containerClass} >
             <ul className="side-links">
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
@@ -29,7 +31,6 @@ const Navbar = ({toggle, isOpen}) => {
                 <li>Login</li>
             </ul>
             </div>
-        </nav>
         </>
      );
 }

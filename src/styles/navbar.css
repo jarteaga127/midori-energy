@@ -11,9 +11,14 @@ nav {
     padding: .5rem 1rem;
     background-color: var(--white);
 height: 72px;
+position: fixed;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
-nav, nav ul {
+.nav-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,40 +38,36 @@ nav li {
     display: none;
 }
 
-.side-menu {
+.side-menu-cont {
     display: none;
 }
 
 @media screen and (max-width: 1024px) {
 
-
-
     .nav-links {
         display: none;
     }
 
-    .side-menu-cont {
- display: none;
-   
 }
 
 .side-menu-cont.open {
-    position: fixed;
+display: flex;
+flex-direction: column;
 z-index: 999;
 width: 100%;
 height: 100%;
 background-color: var(--white);
+left: 0;
+
     
 }
 
     .side-menu-btn {
-        display: block;
+        display: initial;
         background-color: transparent;
     }
 
 .side-links {
     display: flex;
     flex-direction: column;
-    margin-top: 72px;
-}
 }
