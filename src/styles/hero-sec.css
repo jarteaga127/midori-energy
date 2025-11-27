@@ -9,3 +9,17 @@
 .hero-sec-text button {
    font-size: 25px;
 }
+
+@media screen and (max-width: 432px) {
+
+    .hero-sec {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+    }
+
+.hero-sec-text {
+justify-content: flex-end;
+}    
+
+}
