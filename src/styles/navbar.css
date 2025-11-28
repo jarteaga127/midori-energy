@@ -70,12 +70,18 @@ left: 0;
 .side-links {
     display: flex;
     flex-direction: column;
-    margin-top: 72px;
+   
     text-align: center;
+    
     
 }
 }
 
-@media screen and (max-width: 430px) {
-    
+@media screen and (max-width: 432px) {
+    .side-links li {
+        height: 64px;
+        font-size: 36px;
+        border: 1px solid;
+        align-items: center;
+    }
 }

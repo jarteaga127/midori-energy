@@ -16,6 +16,10 @@
   font-family: "Gabarito", sans-serif;
 }
 
+body {
+  width: 100%;
+}
+
 section {
   padding: .5rem 1rem 1.25rem;
 }
