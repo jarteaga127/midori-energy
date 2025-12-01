@@ -22,6 +22,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -70,18 +71,23 @@ left: 0;
 .side-links {
     display: flex;
     flex-direction: column;
-   
     text-align: center;
+   
     
     
 }
+
+.side-links li {
+padding: .5rem 1rem;    
+}
+
 }
 
 @media screen and (max-width: 432px) {
     .side-links li {
         height: 64px;
         font-size: 36px;
-        border: 1px solid;
         align-items: center;
+        
     }
 }
