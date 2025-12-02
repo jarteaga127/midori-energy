@@ -22,3 +22,12 @@
 .about-sec-text {
     width: 50%;
 }
+
+@media screen and (max-width: 432px) {
+    .about-sec-img, .about-sec-text {
+    width: 100%;
+ 
+}
+
+
+}

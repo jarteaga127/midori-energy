@@ -22,3 +22,8 @@
     width: 50%;
 }
 
+@media screen and (max-width: 432px) {
+    .feature-img, .feature-text {
+    width: 100%;
+}
+}
