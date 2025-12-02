@@ -15,6 +15,10 @@ footer {
     color: var(--white);
 }
 
+footer ul {
+  list-style-type: none;
+}
+
 .footer-link {
   color: var(--white);
   text-decoration: none;
@@ -31,6 +35,9 @@ footer {
       flex-direction: column;
     }
  
+    ul {
+      margin-bottom: .5rem;
+    }
 }
 
 
