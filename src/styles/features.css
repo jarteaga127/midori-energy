@@ -16,10 +16,16 @@
 
 .feature-img {
     width: 50%;
+    height: 500px;
 }
 
 .feature-text {
     width: 50%;
+}
+
+.feature-text ul {
+    margin-left: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 432px) {
