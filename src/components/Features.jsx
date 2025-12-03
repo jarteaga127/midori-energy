@@ -18,6 +18,7 @@ Kyoto ya Nara ni wa Nihon no furui bunka ga nokotteiru. Kyoto, Nara wo otozureru
             </ul>
             <button>See our list of ingredients</button>
             </div>
+            
         </section>
      );
 }

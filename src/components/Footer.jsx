@@ -18,6 +18,9 @@ const Footer = () => {
                 <li>X/Twitter</li>
                 <li>Youtube</li>
             </ul>
+            <div className="copyright">
+                <span>2025 Joseph Arteaga</span>
+            </div>
         </footer>
      );
 }
