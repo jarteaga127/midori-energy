@@ -8,11 +8,15 @@
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
+    
     padding: .5rem 1rem 1.25rem;
     background-color: var(--main-color);
     color: var(--white);
+}
+
+.footer-link-group {
+  display: flex;
+    justify-content: space-between;
 }
 
 footer ul {
@@ -30,13 +34,25 @@ footer ul {
   transition: .5s;
 }
 
+.copyright {
+  text-align: center;
+}
+
+@media screen and (max-width: 1043px) {
+  
+}
+
 @media screen and (max-width: 432px) {
-    footer {
+    .footer-link-group {
       flex-direction: column;
     }
  
     ul {
       margin-bottom: .5rem;
+    }
+
+    .copyright {
+      text-align: left;
     }
 }
 

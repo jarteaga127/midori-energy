@@ -10,6 +10,21 @@
    font-size: 25px;
 }
 
+
+@media screen and (max-width: 1043px) {
+  .hero-sec {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       align-items: baseline;
+       height: 50vh;
+    }
+    .hero-sec-text {
+        text-align: left;
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 432px) {
 
     .hero-sec {

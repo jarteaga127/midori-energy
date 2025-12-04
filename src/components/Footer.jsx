@@ -4,7 +4,9 @@ import '../styles/footer.css'
 const Footer = () => {
     return ( 
         <footer>
-            <header><Link to="/" className='footer-link'>Midori</Link></header>
+            
+            <div className="footer-link-group">
+            <header><Link to="/" className='footer-link'>Midori</Link></header>    
             <ul>
                 <li><Link to="/" className='footer-link'>Home</Link></li>
                 <li><Link to="/about-us" className='footer-link'>About us</Link></li>
@@ -18,6 +20,7 @@ const Footer = () => {
                 <li>X/Twitter</li>
                 <li>Youtube</li>
             </ul>
+            </div>
             <div className="copyright">
                 <span>2025 Joseph Arteaga</span>
             </div>
