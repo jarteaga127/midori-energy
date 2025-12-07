@@ -19,6 +19,12 @@
     height: 500px;
 }
 
+.feature-img img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .feature-text {
     width: 50%;
 }

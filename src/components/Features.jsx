@@ -1,9 +1,12 @@
 import '../styles/features.css'
+import greenTeaImg from "../assets/pexels-ivan-s-8951989.jpg"
 
 const Features = () => {
     return ( 
         <section className="feature-sec">
-            <div className="feature-img"></div>
+            <div className="feature-img">
+                <img src={greenTeaImg} alt="green tea" />
+            </div>
             <div className="feature-text">
             <h2>What drinking Midori Green Tea can do for you?</h2>
             <p>
