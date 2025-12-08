@@ -22,7 +22,7 @@ const Navbar = ({toggle, isOpen}) => {
                 <li>Login</li>
             </ul>
             
-            <div className="side-menu-btn" onClick={toggle}>{sideMenuIcon}</div>
+            <div className="side-menu-btn" onClick={toggle} data-testid="side-menu-toggle">{sideMenuIcon}</div>
             
         </nav>
         <div className={containerClass} >
