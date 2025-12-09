@@ -22,6 +22,11 @@
     width: 50%;
 }
 
+.hero-sec-text h1 {
+    font-size: 72px;
+    margin-bottom: 1rem;
+}
+
 .hero-sec-text button {
    font-size: 25px;
 }
