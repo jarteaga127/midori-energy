@@ -1,12 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react'; // Your specific framework plugin
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // --- Vitest Configuration ---
   test: {
-    environment: 'jsdom', // 1. Use JSDOM to simulate the browser environment
-    globals: true,        // 2. Make test utilities (like describe, test, expect) globally available
-    setupFiles: './vitest.setup.js', // 3. Point to the setup file (Step 3)
+    globals: true, // Allows using describe, it, expect without importing
+    environment: 'jsdom', // Essential for testing components (React, Vue, etc.)
   },
-})
+});
