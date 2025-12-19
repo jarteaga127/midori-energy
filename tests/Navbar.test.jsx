@@ -5,7 +5,7 @@ import {describe, it, expect} from "vitest";
 
 
 describe ('Navbar', () => {
-    it('should have three links in the navbar', () => {
+    it('should have five links in the navbar', () => {
         render(
         <MemoryRouter>
         <NavBar/>
