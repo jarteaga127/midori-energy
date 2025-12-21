@@ -14,4 +14,13 @@ render(
         const button = screen.getAllByRole('button', {name: /Shop now/i});
         expect(button).toBeTruthy();
     });
+    it('Should render text in the hero section', () => {
+        render(
+         <MemoryRouter>
+        <HeroSec/>
+    </MemoryRouter>   
+        )
+        const heroText = screen.getByText(/add more green to your life. drink midori/i);
+        expect(heroText);
+    })
 });
