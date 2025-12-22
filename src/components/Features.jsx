@@ -1,5 +1,5 @@
 import '../styles/features.css'
-import greenTeaImg from "../assets/pexels-ivan-s-8951989.jpg"
+import greenTeaImg from "../assets/IMG20251221153352.jpg"
 
 const Features = () => {
     return ( 
