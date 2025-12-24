@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import AboutPage from "./pages/AboutPage"
 import HomePage from "./pages/HomePage"
 import { useState } from "react"
+import NotFoundPage from "./pages/NotFoundPage"
 
 function App() {
  
@@ -20,7 +21,7 @@ setIsOpen(!isOpen)
       <Routes>
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
-      
+      <Route path="/404" element={<NotFoundPage/>}/>
       </Routes>
       <Footer/>
     </>
