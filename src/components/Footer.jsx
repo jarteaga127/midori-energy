@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 import '../styles/footer.css'
+import { FaInstagram } from "react-icons/fa";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return ( 
@@ -15,10 +19,10 @@ const Footer = () => {
             </ul>
             <ul>
                 <h3>Follow us!</h3>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>X/Twitter</li>
-                <li>Youtube</li>
+                <li><FaInstagram/><span className='sns-label'>Instagram</span></li>
+                <li><FaSquareFacebook/><span className='sns-label'>Facebook</span></li>
+                <li><FaXTwitter/><span className='sns-label'>X/Twitter</span></li>
+                <li><FaYoutube/><span className='sns-label'>Youtube</span></li>
             </ul>
             </div>
             <div className="copyright">

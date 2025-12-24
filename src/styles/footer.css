@@ -23,6 +23,11 @@ footer ul {
   list-style-type: none;
 }
 
+li {
+  display: flex;
+  align-items: center;
+}
+
 .footer-link {
   color: var(--white);
   text-decoration: none;
@@ -32,6 +37,11 @@ footer ul {
 .footer-link:hover {
   text-decoration: underline;
   transition: .5s;
+}
+
+.sns-label {
+  margin-left: .5rem;
+  align-items: center; 
 }
 
 .copyright {
