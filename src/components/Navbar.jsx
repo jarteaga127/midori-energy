@@ -17,9 +17,9 @@ const Navbar = ({toggle, isOpen}) => {
             <ul className='nav-links'>
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
-                <li>Shop</li>
-                <li>Subscribe</li>
-                <li>Login</li>
+                <li><Link to="/404" className='link'>Shop</Link> </li>
+                <li><Link to="/404" className='link'>Subscribe</Link></li>
+                <li><Link to="/login" className='link'>Login</Link></li>
             </ul>
             
             <div className="side-menu-btn" onClick={toggle} data-testid="side-menu-toggle">{sideMenuIcon}</div>
@@ -29,9 +29,9 @@ const Navbar = ({toggle, isOpen}) => {
             <ul className="side-links">
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
-                <li>Shop</li>
-                <li>Subscribe</li>
-                <li>Login</li>
+                <li><Link to="/404" className='link'>Shop</Link></li>
+                <li><Link to="/404" className='link'>Subscribe</Link></li>
+                <li><Link to="/404" className='link'>Login</Link></li>
             </ul>
             </div>
         </>

@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage"
 import HomePage from "./pages/HomePage"
 import { useState } from "react"
 import NotFoundPage from "./pages/NotFoundPage"
+import LoginPage from "./pages/LoginPage"
 
 function App() {
  
@@ -22,6 +23,7 @@ setIsOpen(!isOpen)
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
       <Route path="/404" element={<NotFoundPage/>}/>
+      <Route path="/login" element={<LoginPage/>} />
       </Routes>
       <Footer/>
     </>
