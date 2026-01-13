@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../styles/footer.css'
+import '../styles/footer.css';
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
@@ -8,7 +8,6 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
     return ( 
         <footer>
-            
             <div className="footer-link-group">
             <header><Link to="/" className='footer-link'>Midori</Link></header>    
             <ul>

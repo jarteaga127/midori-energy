@@ -8,9 +8,8 @@
 }
 
 footer {
-    
     padding: .5rem 1rem 1.25rem;
-    background-color: var(--main-color);
+    background-color: aqua;
     color: var(--white);
 }
 
