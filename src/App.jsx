@@ -17,7 +17,7 @@ setIsOpen(!isOpen)
 
 
   return (
-    <>
+    <div className="app-cont">
     <Navbar toggle={toggle} isOpen={isOpen} />
     <main>
       <Routes>
@@ -27,8 +27,9 @@ setIsOpen(!isOpen)
       <Route path="/login" element={<LoginPage/>}/>
       </Routes>
       </main>
-      {/*<Footer/>*/}
-    </>
+      <Footer/>
+    
+    </div>
   )
 }
 
