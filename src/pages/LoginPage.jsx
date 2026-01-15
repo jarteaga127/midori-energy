@@ -1,14 +1,14 @@
 import '../styles/login-page.css'
 
-const LoginPage = () => {
+const LoginPage = ({handleSubmit, userName, setUserName, password, setPassword}) => {
     return ( 
         <section>
             <h1>Please Login</h1>
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>
-                <input type="text" id="username"/>
+                <input type="text" id="username" value={userName} onChange={e => setUserName(e.target.value)}/>
                 <label htmlFor="password">Password:</label>
-                <input type="password" />
+                <input type="password" id='password' value={password} onChange={e => setPassword(e.target.value)} />
                 <input type="submit" value="Login" className='login-btn' />
             </form>
             <div className="make-account-sec">

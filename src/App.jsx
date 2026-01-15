@@ -16,6 +16,14 @@ setIsOpen(!isOpen)
   }
 
 
+  const [userName, setUserName] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log("You are now logged in.");
+  }
+
   return (
     <div className="app-cont">
     <Navbar toggle={toggle} isOpen={isOpen} />
@@ -24,7 +32,13 @@ setIsOpen(!isOpen)
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
       <Route path="/404" element={<NotFoundPage/>}/>
-      <Route path="/login" element={<LoginPage/>}/>
+      <Route path="/login" 
+      element={<LoginPage 
+      handleSubmit={handleSubmit}
+      userName={userName}
+      setUserName={setUserName}
+      password={password}
+      setPassword={setPassword} />}/>
       </Routes>
       </main>
       <Footer/>
