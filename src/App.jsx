@@ -18,11 +18,28 @@ setIsOpen(!isOpen)
 
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
+    
+
+    setError('');
+
+    if (!userName || !password ) {
+      setError('Both fields are required!');
+      return;
+    }
+
+    if (password.length < 8 ) {
+      setError('Password must be at least 8 characters long.');
+      return;
+    }
+
     console.log("You are now logged in.");
   }
+
+
 
   return (
     <div className="app-cont">
@@ -38,7 +55,9 @@ setIsOpen(!isOpen)
       userName={userName}
       setUserName={setUserName}
       password={password}
-      setPassword={setPassword} />}/>
+      setPassword={setPassword}
+      error={error}
+      />}/>
       </Routes>
       </main>
       <Footer/>

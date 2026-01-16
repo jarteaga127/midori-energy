@@ -1,9 +1,11 @@
 import '../styles/login-page.css'
 
-const LoginPage = ({handleSubmit, userName, setUserName, password, setPassword}) => {
+const LoginPage = ({handleSubmit, userName, setUserName, password, setPassword, error}) => {
     return ( 
         <section>
             <h1>Please Login</h1>
+
+            {error && <p style={{ color: 'red', fontWeight: 'bold' }}>{error}</p>}
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>
                 <input type="text" id="username" value={userName} onChange={e => setUserName(e.target.value)}/>
