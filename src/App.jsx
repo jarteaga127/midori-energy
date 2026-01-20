@@ -18,25 +18,31 @@ setIsOpen(!isOpen)
 
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+  const [error, setError] = useState({});
 
   const handleSubmit = e => {
     e.preventDefault();
+let validationErrors = {};
+
+    if (!userName) {
+      validationErrors.username = "Username is required";
+    }
+
+    if (!password) {
+      validationErrors.password = "Password is required";
+    } else if (password.length < 8 ) {
+      validationErrors.password = "Password must be at least 8 characters long.";
+      return;
+    }
+
+    if (Object.keys(validationErrors).length > 0) {
+      setError(validationErrors);
+    } else {
+      setError({});
+      console.log("You are now logged in.");
+    }
+
     
-
-    setError('');
-
-    if (!userName || !password ) {
-      setError('Both fields are required!');
-      return;
-    }
-
-    if (password.length < 8 ) {
-      setError('Password must be at least 8 characters long.');
-      return;
-    }
-
-    console.log("You are now logged in.");
   }
 
 
@@ -57,6 +63,7 @@ setIsOpen(!isOpen)
       password={password}
       setPassword={setPassword}
       error={error}
+      setError={setError}
       />}/>
       </Routes>
       </main>
