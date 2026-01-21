@@ -4,8 +4,6 @@ const LoginPage = ({handleSubmit, userName, setUserName, password, setPassword, 
     return ( 
         <section>
             <h1>Please Login</h1>
-
-            
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>
                 <input type="text" 
