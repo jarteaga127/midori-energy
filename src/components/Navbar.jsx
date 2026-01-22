@@ -17,7 +17,7 @@ const Navbar = ({toggle, isOpen}) => {
             <ul className='nav-links'>
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
-                <li><Link to="/404" className='link'>Shop</Link> </li>
+                <li><Link to="/shop" className='link'>Shop</Link> </li>
                 <li><Link to="/404" className='link'>Subscribe</Link></li>
                 <li><Link to="/login" className='link'>Login</Link></li>
             </ul>

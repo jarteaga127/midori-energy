@@ -1,0 +1,14 @@
+.product-card {
+    border: 1px solid black;
+    width: '280px';
+    border-radius: '8px';
+    padding: '16px';
+    display: 'flex';
+    flex-direction: 'column';
+    gap: '12px';
+}
+
+.product-pic {
+    width: 180px;
+    height: 540px;
+}

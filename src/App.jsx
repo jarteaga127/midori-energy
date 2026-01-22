@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import { useState } from "react";
 import NotFoundPage from "./pages/NotFoundPage";
 import LoginPage from "./pages/LoginPage";
+import ShopPage from "./pages/ShopPage";
 
 function App() {
  
@@ -54,6 +55,7 @@ let validationErrors = {};
       <Routes>
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
+      <Route path="/shop" element={<ShopPage/>} />
       <Route path="/404" element={<NotFoundPage/>}/>
       <Route path="/login" 
       element={<LoginPage 
