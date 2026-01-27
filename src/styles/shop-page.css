@@ -1,0 +1,10 @@
+.shop-grid {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+margin-bottom: 1.25rem;
+}
+
+.home-link-cont {
+    font-size: 20px;
+}

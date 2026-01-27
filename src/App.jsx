@@ -7,6 +7,7 @@ import { useState } from "react";
 import NotFoundPage from "./pages/NotFoundPage";
 import LoginPage from "./pages/LoginPage";
 import ShopPage from "./pages/ShopPage";
+import products from "./data/ProductData";
 
 function App() {
  
@@ -55,7 +56,10 @@ let validationErrors = {};
       <Routes>
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
-      <Route path="/shop" element={<ShopPage/>} />
+      <Route path="/shop" 
+      element={<ShopPage
+      products={products}
+      />} />
       <Route path="/404" element={<NotFoundPage/>}/>
       <Route path="/login" 
       element={<LoginPage 
