@@ -47,7 +47,16 @@ let validationErrors = {};
     
   }
 
+//Initialize cart state
 
+const [cart, setCart] = useState([]);
+
+//Define the handler
+
+const addToCart = (product) => {
+  setCart((prevCart) => [...prevCart, product]);
+  alert((`${product.item} added to cart!`));
+};
 
   return (
     <div className="app-cont">
@@ -59,6 +68,7 @@ let validationErrors = {};
       <Route path="/shop" 
       element={<ShopPage
       products={products}
+      addToCart={addToCart}
       />} />
       <Route path="/404" element={<NotFoundPage/>}/>
       <Route path="/login" 
