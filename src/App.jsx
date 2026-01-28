@@ -8,6 +8,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import LoginPage from "./pages/LoginPage";
 import ShopPage from "./pages/ShopPage";
 import products from "./data/ProductData";
+import CartPage from "./pages/CartPage";
 
 function App() {
  
@@ -81,6 +82,7 @@ const addToCart = (product) => {
       error={error}
       setError={setError}
       />}/>
+      <Route path="/my-cart" element={<CartPage/>}/>
       </Routes>
       </main>
       <Footer/>
