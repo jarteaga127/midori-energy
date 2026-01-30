@@ -59,6 +59,12 @@ const addToCart = (product) => {
   alert((`${product.item} added to cart!`));
 };
 
+const removeFromCart = (indexRemove) => {
+  setCart((prevCart) => 
+  prevCart.filter((_, index) => index !== indexRemove)
+  )
+};
+
   return (
     <div className="app-cont">
     <Navbar toggle={toggle} isOpen={isOpen} cartCount={cart.length} />
@@ -84,6 +90,7 @@ const addToCart = (product) => {
       />}/>
       <Route path="/my-cart" element={<CartPage
       cart={cart}
+      removeFromCart={removeFromCart}
       />}/>
       </Routes>
       </main>
