@@ -3,7 +3,7 @@ import '../styles/navbar.css';
 import { RiCloseLargeFill } from "react-icons/ri";
 import { FaBars } from "react-icons/fa6";
 
-const Navbar = ({toggle, isOpen}) => {
+const Navbar = ({toggle, isOpen, cartCount}) => {
 
    const containerClass = isOpen ? "side-menu-cont open" : "side-menu-cont";
 
@@ -18,6 +18,8 @@ const Navbar = ({toggle, isOpen}) => {
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
                 <li><Link to="/shop" className='link'>Shop</Link> </li>
+                <li><Link to="/my-cart" className='link'>My Cart <span className="cart-count">({cartCount})</span>
+                 </Link> </li>
                 <li><Link to="/404" className='link'>Subscribe</Link></li>
                 <li><Link to="/login" className='link'>Login</Link></li>
             </ul>

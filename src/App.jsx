@@ -61,7 +61,7 @@ const addToCart = (product) => {
 
   return (
     <div className="app-cont">
-    <Navbar toggle={toggle} isOpen={isOpen} />
+    <Navbar toggle={toggle} isOpen={isOpen} cartCount={cart.length} />
     <main>
       <Routes>
         <Route path="/" element={<HomePage/>} />
@@ -82,7 +82,9 @@ const addToCart = (product) => {
       error={error}
       setError={setError}
       />}/>
-      <Route path="/my-cart" element={<CartPage/>}/>
+      <Route path="/my-cart" element={<CartPage
+      cart={cart}
+      />}/>
       </Routes>
       </main>
       <Footer/>
