@@ -1,0 +1,11 @@
+.cart-item {
+display: flex;
+justify-content: space-between;
+border: 1px solid;
+align-items: center;
+margin-bottom: .5rem;
+}
+
+.empty-cart {
+    margin-bottom: .5rem;
+}

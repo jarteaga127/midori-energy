@@ -1,3 +1,4 @@
+import "../styles/cart-page.css";
 import { Link } from "react-router-dom";
 
 const CartPage = ({cart, removeFromCart}) => {
@@ -8,9 +9,9 @@ const total = cart.reduce((acc, item) => acc + item.price, 0);
         <section>
             <h1>Here is what's in your cart now:</h1>
             {cart.length === 0 ? (
-                <div>
+                <div className="empty-cart">
     <p>Looks like your cart is empty.</p>
-    <Link to="/shop" className='link'>Let's go shopping!</Link>
+    <Link to="/shop" className='section-link'>Let's go shopping!</Link>
 </div>
 ) : (
 <div className="my-cart-container">
