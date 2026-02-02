@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NotFoundPage from "./pages/NotFoundPage";
 import LoginPage from "./pages/LoginPage";
 import ShopPage from "./pages/ShopPage";
@@ -50,7 +50,16 @@ let validationErrors = {};
 
 //Initialize cart state
 
-const [cart, setCart] = useState([]);
+const [cart, setCart] = useState(() => {
+  const savedCart = localStorage.getItem("shoppingCart");
+  return savedCart ? JSON.parse(savedCart) : [];
+});
+
+//Save to local storage whenever the cart changes
+
+useEffect(() => {
+  localStorage.setItem("shoppingCart", JSON.stringify(cart));
+});
 
 //Define the handler
 
