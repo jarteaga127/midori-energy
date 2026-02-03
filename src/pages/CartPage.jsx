@@ -1,7 +1,7 @@
 import "../styles/cart-page.css";
 import { Link } from "react-router-dom";
 
-const CartPage = ({cart, removeFromCart}) => {
+const CartPage = ({cart, removeFromCart, emptyCart}) => {
 
 const total = cart.reduce((acc, item) => acc + item.price, 0);
 
@@ -22,6 +22,7 @@ const total = cart.reduce((acc, item) => acc + item.price, 0);
             <button onClick={() => removeFromCart(index)}>Remove from cart</button>
         </div>
     ))}
+    <button onClick={emptyCart}>Empty my cart</button>
 </div>
 )}
 <div>

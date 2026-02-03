@@ -74,6 +74,12 @@ const removeFromCart = (indexRemove) => {
   )
 };
 
+const emptyCart = () => {
+  if (window.confirm("Are you sure you want to empty your cart now?")) {
+setCart([]);
+  }
+};
+
   return (
     <div className="app-cont">
     <Navbar toggle={toggle} isOpen={isOpen} cartCount={cart.length} />
@@ -100,6 +106,7 @@ const removeFromCart = (indexRemove) => {
       <Route path="/my-cart" element={<CartPage
       cart={cart}
       removeFromCart={removeFromCart}
+      emptyCart={emptyCart}
       />}/>
       </Routes>
       </main>
