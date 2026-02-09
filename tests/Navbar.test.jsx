@@ -5,14 +5,14 @@ import {describe, it, expect} from "vitest";
 
 
 describe ('Navbar', () => {
-    it('should have five links in the navbar', () => {
+    it('should have twelve links in the navbar', () => {
         render(
         <MemoryRouter>
         <NavBar/>
     </MemoryRouter>
     );
         const navLinks = screen.getAllByRole('link');
-        expect(navLinks).toHaveLength(5);
+        expect(navLinks).toHaveLength(12);
 
     }); 
 
