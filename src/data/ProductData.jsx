@@ -1,21 +1,21 @@
  const products = [
     {id: 1,
-        item: "Canned green tea - Unsweetened",
+        item: "Canned green tea Unsweetened",
         price: 199,
 
     },
     {id: 2,
-        item: "Canned green tea - Mint",
+        item: "Canned green tea Mint",
         price: 199,
 
     },
     {id: 3,
-        item: "Canned green tea - Blueberry",
+        item: "Canned green tea Blueberry",
         price: 199,
 
     },
     {id: 4,
-        item: "Canned green tea - Peach",
+        item: "Canned green tea Peach",
         price: 199,
 
     },
