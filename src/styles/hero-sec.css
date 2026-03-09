@@ -40,10 +40,18 @@
        align-items: baseline;
        height: 50vh;
     }
+
     .hero-sec-text {
-        text-align: left;
-        width: 50%;
-    }
+justify-content: flex-end;
+text-align: center;
+width: 100%;
+}    
+
+.hero-sec-text h1 {
+    font-size: 56px;
+    margin-bottom: .75rem;
+}
+ 
 }
 
 @media screen and (max-width: 432px) {
