@@ -1,6 +1,8 @@
-import '../styles/login-page.css'
+import '../styles/login-page.css';
+import { useAuth } from '../context/AuthProvider';
 
-const LoginPage = ({handleSubmit, userName, setUserName, password, setPassword, error, setError}) => {
+const LoginPage = () => {
+    const {userName, setUserName, password, setPassword, error, handleSubmit} = useAuth();
     return ( 
         <section>
             <h1>Please Login</h1>

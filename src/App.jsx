@@ -9,6 +9,8 @@ import LoginPage from "./pages/LoginPage";
 import ShopPage from "./pages/ShopPage";
 import products from "./data/ProductData";
 import CartPage from "./pages/CartPage";
+import { AuthProvider } from "./context/AuthProvider";
+import { CartProvider } from "./context/CartProvider";
 
 function App() {
  
@@ -81,6 +83,8 @@ setCart([]);
 };
 
   return (
+<AuthProvider>
+<CartProvider>
     <div className="app-cont">
     <Navbar toggle={toggle} isOpen={isOpen} cartCount={cart.length} />
     <main>
@@ -111,8 +115,9 @@ setCart([]);
       </Routes>
       </main>
       <Footer/>
-    
     </div>
+    </CartProvider>
+    </AuthProvider>
   )
 }
 
