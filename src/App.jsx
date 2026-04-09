@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import NotFoundPage from "./pages/NotFoundPage";
 import LoginPage from "./pages/LoginPage";
 import ShopPage from "./pages/ShopPage";
@@ -20,7 +20,7 @@ function App() {
 setIsOpen(!isOpen)
   }
 
-
+/*
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState({});
@@ -50,9 +50,11 @@ let validationErrors = {};
     
   }
 
+ */ 
+
 //Initialize cart state
 
-const [cart, setCart] = useState(() => {
+/* const [cart, setCart] = useState(() => {
   const savedCart = localStorage.getItem("shoppingCart");
   return savedCart ? JSON.parse(savedCart) : [];
 });
@@ -81,37 +83,21 @@ const emptyCart = () => {
 setCart([]);
   }
 };
-
+*/
   return (
 <AuthProvider>
 <CartProvider>
     <div className="app-cont">
-    <Navbar toggle={toggle} isOpen={isOpen} cartCount={cart.length} />
+    <Navbar toggle={toggle} isOpen={isOpen}/>
     <main>
       <Routes>
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
       <Route path="/shop" 
-      element={<ShopPage
-      products={products}
-      addToCart={addToCart}
-      />} />
+      element={<ShopPage products={products}/>}/>
       <Route path="/404" element={<NotFoundPage/>}/>
-      <Route path="/login" 
-      element={<LoginPage 
-      handleSubmit={handleSubmit}
-      userName={userName}
-      setUserName={setUserName}
-      password={password}
-      setPassword={setPassword}
-      error={error}
-      setError={setError}
-      />}/>
-      <Route path="/my-cart" element={<CartPage
-      cart={cart}
-      removeFromCart={removeFromCart}
-      emptyCart={emptyCart}
-      />}/>
+      <Route path="/login" element={<LoginPage/>}/>
+      <Route path="/my-cart" element={<CartPage/>}/>
       </Routes>
       </main>
       <Footer/>
