@@ -1,7 +1,10 @@
 import "../styles/cart-page.css";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartProvider";
 
-const CartPage = ({cart, removeFromCart, emptyCart}) => {
+const CartPage = () => {
+
+const {cart, removeFromCart, emptyCart} = useCart();
 
 const total = cart.reduce((acc, item) => acc + item.price, 0);
 

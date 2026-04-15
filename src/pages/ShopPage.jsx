@@ -1,8 +1,11 @@
 import ProductCard from "../components/ProductCard";
 import "../styles/shop-page.css";
 import { Link } from 'react-router-dom';
+import { useCart } from "../context/CartProvider";
 
-const ShopPage = ({products, addToCart}) => {
+const ShopPage = ({products}) => {
+
+    const {addToCart} = useCart();
     return ( 
         <section>
             <h1>Let's see what's in store.</h1>
