@@ -31,6 +31,9 @@ const total = cart.reduce((acc, item) => acc + item.price, 0);
 <div>
     <h3>Your total is ¥{total}</h3>
 </div>
+<div className="home-link-cont">
+                <Link to="/" className='link'>Back to Home</Link>
+            </div>
         </section>
      );
 }

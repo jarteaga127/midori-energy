@@ -1,5 +1,6 @@
 import '../styles/login-page.css';
 import { useAuth } from '../context/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
     const {userName, setUserName, password, setPassword, error, handleSubmit} = useAuth();
@@ -29,6 +30,9 @@ const LoginPage = () => {
             </form>
             <div className="make-account-sec">
                 <p>Don't have an account? Let's make one!</p>
+            </div>
+            <div className="home-link-cont">
+                <Link to="/" className='link'>Back to Home</Link>
             </div>
         </section>
      );
