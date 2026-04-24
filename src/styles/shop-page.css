@@ -1,8 +1,8 @@
 .shop-grid {
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-margin-bottom: 1.25rem;
+    display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
 }
 
 .home-link-cont {
