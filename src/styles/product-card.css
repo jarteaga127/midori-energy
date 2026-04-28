@@ -25,7 +25,6 @@
 
 .product-text {
     font-size: 20px;
-    border: 1px solid;
     margin: .5rem 1rem .75rem;
     flex-grow: 1; 
   display: flex;

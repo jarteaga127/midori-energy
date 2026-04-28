@@ -28,6 +28,16 @@
         item: "Matcha tea powder",
         price: 1999,
 
+    },
+    {id: 7,
+        item: "Matcha tea powder",
+        price: 1999,
+
+    },
+    {id: 8,
+        item: "Matcha tea powder",
+        price: 1999,
+
     }
 ];
 

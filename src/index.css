@@ -32,6 +32,11 @@ p, li, button {
   font-size: 20px;
 } 
 
+h1, h2, h3, header {
+  margin-top: .5rem;
+  margin-bottom: .75rem;
+}
+
 main {
    padding-top: 72px;
   flex: 1;
