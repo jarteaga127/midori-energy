@@ -20,16 +20,16 @@ const total = cart.reduce((acc, item) => acc + item.price, 0);
 <div className="my-cart-container">
     {cart.map((item, index) => (
         <div key={index} className="cart-item">
-            <span>{item.item}</span>
-            <span>¥{item.price}</span>
-            <button onClick={() => removeFromCart(index)}>Remove from cart</button>
+            <span className="cart-item-name">{item.item}</span>
+            <span className="cart-item-price">¥{item.price}</span>
+            <button onClick={() => removeFromCart(index)} className="remove-from-cart">Remove from cart</button>
         </div>
     ))}
     <button onClick={emptyCart}>Empty my cart</button>
 </div>
 )}
 <div>
-    <h3>Your total is ¥{total}</h3>
+    <h3 className="cart-total">Your total is ¥{total}</h3>
 </div>
 <div className="home-link-cont">
                 <Link to="/" className='link'>Back to Home</Link>
