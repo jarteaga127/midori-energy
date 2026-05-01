@@ -26,12 +26,11 @@ const Navbar = ({toggle, isOpen}) => {
                 <li><Link to="/shop" className='link'>Shop</Link> </li>
                 <li><Link to="/my-cart" className='link'> My Cart ( {cart.length > 0 && <span className="cart-count">{cart.length}</span>})
                  </Link> </li>
-                <li><Link to="/404" className='link'>Subscribe</Link></li>
 
                 {isLoggedIn ? (
                     <div className="user-section">
             <span>Hi, {userName}!</span>
-            <button onClick={logout} className="logout-btn">Logout</button>
+            <div onClick={logout} className="logout-btn">Logout</div>
           </div>
         ) : (<li><Link to="/login" className='link'>Login</Link></li>)}
                 

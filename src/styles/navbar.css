@@ -44,6 +44,33 @@ nav li {
     transition: .5s;
 }
 
+.user-section {
+    display: flex;
+}
+
+.user-section span {
+    
+    padding: .5rem 1rem;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logout-btn {
+    background-color: transparent;
+    align-items: center;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+   color: var(--main-color);
+  transition: .5s;
+  text-decoration: underline;
+    
+}
+
 @media screen and (max-width: 1024px) {
 
     .nav-links {
