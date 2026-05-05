@@ -1,5 +1,5 @@
 :root {
-  --main-color: #3D7521;
+  --main-color: #3d7521;
   --main-color-2: #275B0D;
   --second-color: #EFA700;
   --second-color-2: #D38302;
@@ -41,7 +41,8 @@ nav li {
 
 .side-menu-cont {
     display: none;
-    transition: .5s;
+   transition: transform 0.3s ease-in-out;
+   transform: translateX(-100%);
 }
 
 .user-section {
@@ -78,9 +79,8 @@ nav li {
     }
 
     .side-menu-btn {
-        font-size: 36px;
+        font-size: 44px;
     }
-
 
 
 .side-menu-cont.open {
@@ -90,12 +90,13 @@ flex-direction: column;
 z-index: 999;
 width: 100%;
 height: 100vh;
-background-color: var(--main-color);
+background-color: rgba(61, 117, 33, 0.85);
+backdrop-filter: blur(8px);
 color: var(--white);
 left: 0;
 margin-top: 72px;
-transition: .5s;
-    
+transition: transform 0.3s ease-in-out;
+ transform: translateX(0);   
 }
 
     .side-menu-btn {
@@ -107,7 +108,7 @@ transition: .5s;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+    margin-left: 1rem;
    
     
     
@@ -115,20 +116,25 @@ transition: .5s;
 
 .side-links li {
 padding: .5rem 1rem;    
-font-size: 48px;
+
 
 }
 
 .side-links .link {
-color: var(--white);    
+color: var(--white); 
+font-size: 32px;   
 }
 }
 
 @media screen and (max-width: 432px) {
     .side-links li {
         height: 64px;
-        font-size: 36px;
+        
         align-items: center;
         
     }
+
+    .side-links .link {
+   font-size: 36px;
+}
 }
