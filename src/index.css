@@ -78,12 +78,20 @@ button:hover, .section-link:hover, .login-btn:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
 
+body {
+  max-width: 1024px;
+}
+
+
+}
 
 @media screen and (max-width: 432px) {
 
 body {
   width: 100%;
+  max-width: 432;
 }
 
   section {
