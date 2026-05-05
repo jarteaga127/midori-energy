@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
-import { useState} from "react";
+import { useState, useEffect} from "react";
 import NotFoundPage from "./pages/NotFoundPage";
 import LoginPage from "./pages/LoginPage";
 import ShopPage from "./pages/ShopPage";
@@ -11,10 +11,16 @@ import products from "./data/ProductData";
 import CartPage from "./pages/CartPage";
 import { AuthProvider } from "./context/AuthProvider";
 import { CartProvider } from "./context/CartProvider";
+import { useLocation } from "react-router-dom";
 
 function App() {
  
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+useEffect(() => {
+  setIsOpen(false);
+}, [location]);
 
   const toggle = () => {
 setIsOpen(!isOpen)
@@ -88,7 +94,7 @@ setCart([]);
 <AuthProvider>
 <CartProvider>
     <div className="app-cont">
-    <Navbar toggle={toggle} isOpen={isOpen}/>
+    <Navbar toggle={toggle} isOpen={isOpen} />
     <main>
       <Routes>
         <Route path="/" element={<HomePage/>} />
