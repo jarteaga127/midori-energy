@@ -8,7 +8,7 @@ const ProductCard = ({products, addToCart}) => {
             <div className="product-pic"></div>
             <div className="product-text">
                 <div className="product-name">
-                    <div className="product-type">{product.item}</div>
+                    <div className="product-type">{product.name}</div>
                 </div>
                 <div className="product-price">¥{product.price}</div>
                 <button onClick={() => addToCart(product)}>Add to cart</button>

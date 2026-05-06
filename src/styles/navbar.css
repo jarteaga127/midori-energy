@@ -99,6 +99,14 @@ transition: transform 0.3s ease-in-out;
  transform: translateX(0);   
 }
 
+.side-menu-wrapper {
+    display: grid;
+  grid-template-columns: 1fr 1fr; /* Split 50/50 on iPad */
+  width: 90%;
+  max-width: 1200px;
+  gap: 50px;
+}
+
     .side-menu-btn {
         display: initial;
         background-color: transparent;
@@ -120,13 +128,28 @@ padding: .5rem 1rem;
 
 }
 
-.side-links .link {
+.side-links .link, .side-menu-right {
 color: var(--white); 
 font-size: 32px;   
 }
+
+.mini-item {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+}
 }
 
-@media screen and (max-width: 432px) {
+@media screen and (max-width: 768px) {
+
+    .side-menu-wrapper {
+  grid-template-columns: 1fr;
+}
+
+.side-menu-right {
+    display: none;
+}
+
     .side-links li {
         height: 64px;
         

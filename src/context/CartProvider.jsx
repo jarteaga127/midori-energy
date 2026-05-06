@@ -56,7 +56,7 @@ setCart([]);
 };
 //Provide everything via the value prop
 return (
-<CartContext.Provider value={{ cart, addToCart, removeFromCart, emptyCart }}>
+<CartContext.Provider value={{ cart, addToCart, removeFromCart, emptyCart, getSubtotal }}>
 {children}
 </CartContext.Provider>
 )

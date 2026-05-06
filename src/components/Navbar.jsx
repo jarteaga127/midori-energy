@@ -60,9 +60,12 @@ const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
             </ul>
             </div>
                 <div className="side-menu-right">
-                        <h3>Current Selection</h3>
+                        <h3>What's in your cart right now?</h3>
             {cart.length === 0 ? (
+                <div className="mini-cart-empty">
               <p className="empty-msg">Looks like your cart is empty.</p>
+              <Link to="/shop" className='section-link'>Let's go shopping!</Link>
+              </div>
             ) : (
               <div className="mini-cart-items">
     {cart.map((item) => (
@@ -70,9 +73,14 @@ const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
         <span>{item.name} (x{item.qty})</span>
         <span>¥{(item.price * item.qty).toLocaleString()}</span>
         <button onClick={() => removeFromCart(item.id)}>Remove</button>
+        <div className="mini-total">
+    <strong>Total: ¥{getSubtotal().toLocaleString()}</strong>
+  </div>
       </div>
+      
     ))}
   </div>
+  
             )}
                     
                 </div>
