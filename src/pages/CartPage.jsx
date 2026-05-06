@@ -22,7 +22,7 @@ const total = cart.reduce((acc, item) => acc + item.price, 0);
         <div key={index} className="cart-item">
             <span className="cart-item-name">{item.item}</span>
             <span className="cart-item-price">¥{item.price}</span>
-            <button onClick={() => removeFromCart(index)} className="remove-from-cart">Remove from cart</button>
+            <button onClick={() => removeFromCart(item.id)} className="remove-from-cart">Remove from cart</button>
         </div>
     ))}
     <button onClick={emptyCart}>Empty my cart</button>

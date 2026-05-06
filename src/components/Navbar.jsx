@@ -9,12 +9,13 @@ import { useCart } from "../context/CartProvider";
 const Navbar = ({toggle, isOpen}) => {
 
     const { isLoggedIn, logout, userName } = useAuth();
-  const { cart } = useCart();
+  const { cart, removeFromCart, getSubtotal } = useCart();
 
    const containerClass = isOpen ? "side-menu-cont open" : "side-menu-cont";
 
    const sideMenuIcon = isOpen ? <RiCloseLargeFill/> : <FaBars/>;
 
+const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
 
     return ( 
         <>
@@ -40,7 +41,9 @@ const Navbar = ({toggle, isOpen}) => {
             
         </nav>
         <div className={containerClass} >
-            <ul className="side-links">
+            <div className="side-menu-wrapper">
+                <div className="side-menu-left">
+                    <ul className="side-links">
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
                 <li><Link to="/shop" className='link'>Shop</Link> </li>
@@ -55,6 +58,26 @@ const Navbar = ({toggle, isOpen}) => {
           </div>
         ) : (<li><Link to="/login" className='link'>Login</Link></li>)}
             </ul>
+            </div>
+                <div className="side-menu-right">
+                        <h3>Current Selection</h3>
+            {cart.length === 0 ? (
+              <p className="empty-msg">Looks like your cart is empty.</p>
+            ) : (
+              <div className="mini-cart-items">
+    {cart.map((item) => (
+      <div key={item.id} className="mini-item">
+        <span>{item.name} (x{item.qty})</span>
+        <span>¥{(item.price * item.qty).toLocaleString()}</span>
+        <button onClick={() => removeFromCart(item.id)}>Remove</button>
+      </div>
+    ))}
+  </div>
+            )}
+                    
+                </div>
+            </div>
+            
             </div>
         </>
      );
