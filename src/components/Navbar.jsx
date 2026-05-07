@@ -9,7 +9,7 @@ import { useCart } from "../context/CartProvider";
 const Navbar = ({toggle, isOpen}) => {
 
     const { isLoggedIn, logout, userName } = useAuth();
-  const { cart, removeFromCart, getSubtotal } = useCart();
+  const { cart, removeFromCart, getSubtotal, emptyCart } = useCart();
 
    const containerClass = isOpen ? "side-menu-cont open" : "side-menu-cont";
 
@@ -74,7 +74,8 @@ const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
         <span>¥{(item.price * item.qty).toLocaleString()}</span>
         <button onClick={() => removeFromCart(item.id)}>Remove</button>
         <div className="mini-total">
-    <strong>Total: ¥{getSubtotal().toLocaleString()}</strong>
+    
+    
   </div>
       </div>
       
@@ -82,7 +83,8 @@ const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
   </div>
   
             )}
-                    
+            <button onClick={emptyCart}>Empty my cart</button> 
+            <strong>Your total: ¥{getSubtotal().toLocaleString()}</strong>       
                 </div>
             </div>
             

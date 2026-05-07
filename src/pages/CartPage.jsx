@@ -20,7 +20,7 @@ const total = cart.reduce((acc, item) => acc + item.price, 0);
 <div className="my-cart-container">
     {cart.map((item, index) => (
         <div key={index} className="cart-item">
-            <span className="cart-item-name">{item.item}</span>
+            <span className="cart-item-name">{item.name}</span>
             <span className="cart-item-price">¥{item.price}</span>
             <button onClick={() => removeFromCart(item.id)} className="remove-from-cart">Remove from cart</button>
         </div>
