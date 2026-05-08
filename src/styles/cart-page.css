@@ -35,3 +35,15 @@ box-shadow: 4px 4px 5px rgb(238, 246, 241);
 .empty-cart {
     margin-bottom: .5rem;
 }
+
+@media screen and (max-width: 432px) {
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-item-name, .cart-item-price {
+        font-size: 25px;
+        text-align: center;
+    }
+}
