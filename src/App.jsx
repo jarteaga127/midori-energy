@@ -12,6 +12,7 @@ import CartPage from "./pages/CartPage";
 import { AuthProvider } from "./context/AuthProvider";
 import { CartProvider } from "./context/CartProvider";
 import { useLocation } from "react-router-dom";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
  
@@ -96,6 +97,7 @@ setCart([]);
     <div className="app-cont">
     <Navbar toggle={toggle} isOpen={isOpen} />
     <main>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<AboutPage/>} />
