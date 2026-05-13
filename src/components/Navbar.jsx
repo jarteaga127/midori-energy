@@ -47,7 +47,7 @@ const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
                 <li><Link to="/shop" className='link'>Shop</Link> </li>
-                <li><Link to="/my-cart" className='link'> My Cart ( {cart.length > 0 && <span className="cart-count">{cart.length}</span>})
+                <li><Link to="/my-cart" className='link'> My Cart ({cart.length > 0 && <span className="cart-count">{cart.length}</span>})
                  </Link> </li>
                 <li><Link to="/404" className='link'>Subscribe</Link></li>
 
@@ -83,8 +83,12 @@ const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
   </div>
   
             )}
+            <div className="side-empty-btn">
             <button onClick={emptyCart}>Empty my cart</button> 
-            <strong>Your total: ¥{getSubtotal().toLocaleString()}</strong>       
+            </div>
+            <div className="side-subtotal">
+            <strong>Your total: ¥{getSubtotal().toLocaleString()}</strong>      
+            </div>     
                 </div>
             </div>
             

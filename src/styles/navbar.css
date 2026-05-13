@@ -69,7 +69,6 @@ nav li {
    color: var(--main-color);
   transition: .5s;
   text-decoration: underline;
-    
 }
 
 @media screen and (max-width: 1024px) {
@@ -138,9 +137,13 @@ font-size: 32px;
     flex-direction: column;
     padding: .5rem 1rem;
 }
+
+.side-empty-btn {
+    margin-top: .5rem;
+}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
 
     .side-menu-wrapper {
   grid-template-columns: 1fr;
