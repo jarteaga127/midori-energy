@@ -25,7 +25,7 @@ const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
                 <li><Link to="/" className='link'>Home</Link></li>
                 <li><Link to="/about-us" className='link'>About us</Link></li>
                 <li><Link to="/shop" className='link'>Shop</Link> </li>
-                <li><Link to="/my-cart" className='link'> My Cart ( {cart.length > 0 && <span className="cart-count">{cart.length}</span>})
+                <li><Link to="/my-cart" className='link'> My Cart ({cart.length > 0 && <span className="cart-count">{cart.length}</span>})
                  </Link> </li>
 
                 {isLoggedIn ? (
