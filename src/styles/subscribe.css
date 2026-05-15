@@ -1,0 +1,25 @@
+.subscribe-container {
+    display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 760px) {
+  .subscribe-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
