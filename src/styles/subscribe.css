@@ -1,3 +1,9 @@
+.subscribe-section {
+  height: 250px;
+  background-color: var(--main-color-2);
+  color: var(--white);
+}
+
 .subscribe-container {
     display: grid;
   grid-template-columns: 1fr;
