@@ -107,6 +107,7 @@ setCart([]);
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/my-cart" element={<CartPage/>}/>
       </Routes>
+      
       </main>
       <Footer/>
     </div>
