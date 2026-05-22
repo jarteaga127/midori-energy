@@ -29,7 +29,7 @@ box-shadow: 4px 4px 5px rgb(238, 246, 241);
 }
 
 .cart-total {
-    font-size: 28px;
+    font-size: 2rem;
 }
 
 .empty-cart {
@@ -43,7 +43,7 @@ box-shadow: 4px 4px 5px rgb(238, 246, 241);
     }
 
     .cart-item-name, .cart-item-price {
-        font-size: 25px;
+        font-size: 1.5rem;
         text-align: center;
     }
 }

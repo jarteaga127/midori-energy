@@ -7,6 +7,9 @@
   --second-color-2: #D38302;
   --white: #FAFFF7;
   --black: #081601;
+  
+  /* Shared transition timing for easier maintenance */
+  --transition-speed: 0.3s; 
 }
 
 * {
@@ -18,6 +21,8 @@
 
 body {
   width: 100%;
+  background-color: var(--white); /* Added to utilize your variable */
+  color: var(--black);
 }
 
 section {
@@ -28,8 +33,9 @@ p {
   margin-bottom: 1.25rem;
 }
 
+/* Changed to rem for better responsiveness/accessibility */
 p, li, button {
-  font-size: 20px;
+  font-size: 1.25rem; /* Equivalent to 20px if base is 16px */
 } 
 
 h1, h2, h3, header {
@@ -38,8 +44,8 @@ h1, h2, h3, header {
 }
 
 main {
-   padding-top: 72px;
-  flex: 1;
+  padding-top: 72px;
+  flex: 1; /* Works perfectly if parent is .app-cont */
 }
 
 button, .section-link, .login-btn {
@@ -49,14 +55,14 @@ button, .section-link, .login-btn {
   cursor: pointer;
   border-radius: 8px;
   color: var(--black);
-  transition: .5s;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
+  transition: background-color var(--transition-speed); /* More specific transition */
 }
 
 button:hover, .section-link:hover, .login-btn:hover {
   background-color: var(--second-color-2);
-  transition: .5s;
+  /* Removed duplicate transition rule */
 }
 
 .app-cont {
@@ -68,31 +74,24 @@ button:hover, .section-link:hover, .login-btn:hover {
 .link {
   color: #000;
   text-decoration: none;
-  transition: .5s;
-  font-size: 20px;
+  font-size: 1.25rem;
+  transition: color var(--transition-speed), text-decoration var(--transition-speed);
 }
 
 .link:hover {
   color: var(--main-color);
-  transition: .5s;
   text-decoration: underline;
+  /* Removed duplicate transition rule */
 }
 
-@media screen and (max-width: 1024px) {
-
-body {
-  max-width: 1024px;
-}
-
-
-}
+/* Removed the redundant 1024px media query */
 
 @media screen and (max-width: 432px) {
-
-body {
-  width: 100%;
-  max-width: 432;
-}
+  body {
+    width: 100%;
+    /* Fixed missing 'px' unit */
+    max-width: 432px; 
+  }
 
   section {
     display: flex;
